@@ -68,3 +68,37 @@ Una expresión muy utilizada, y que suele confundir, es cuando usamos un objeto 
 ```javascript
 <div style={{ color: 'red' }} />
 ```
+Toda expresión JSX debe necesariamente tener un único elemento raíz o padre, es decir, estar contenida dentro de un elemento (o componente) principal. Por ejemplo, esto no es código JSX válido:
+
+```javascript
+<div />
+<div />
+```
+
+mientras que esto sí:
+
+
+```javascript
+<div>
+  <div />
+  <div />
+<div />
+```
+
+dado que los `divs` están encerrados dentro de un único elemento `div`. Para evitar estar poniendo (y renderizando) `divs` innecesarios, React ofrece un componente llamando `Fragment`, que se utiliza para estos caso (encerrar un conjunto de elementos o componentes hermanos), y que no se renderiza en el DOM. Se puede utilizar de forma explícita:
+
+```javascript
+<React.Fragment>
+  <div />
+  <div />
+</React.Fragment>
+```
+
+o en su forma abreviada, utlizando las etiquetas de apertura y cierre `<></>`
+
+```javascript
+<>
+  <div />
+  <div />
+</>
+```

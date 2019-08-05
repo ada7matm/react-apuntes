@@ -16,10 +16,11 @@ Por esto es que necesitamos importar la librería React en la constante `React` 
 
 Si bien JSX es muy similar en sintaxis a HTML, hay algunas diferencias:
 
-1. Las etiquetas pueden ser abiertas (`<div />`) o cerradas (`<div></div>`)
-2. Los atributos van en *camelCase*, por ejemplo `<div onClick />`
-3. Algunos atributos tienen nombre distinto al de que se utiliza en HTML, por ejemplo `className` en vez de `class`
-4. Como eso se compila a código JS, cada línea se termina autocompletando con un punto y coma, por lo tanto, si ponemos:
+1. Principalmente, podemos usar etiquetas que no corresponden a elementos HTML, sino a componentes de React. Estos se distinguen de los primeros en que su nombre comienza con letra mayúscula, por ejemplo, `<Button />` representa un componente de React mientras que `<button />` representa el elemento HTML. 
+2. Las etiquetas pueden ser abiertas (`<div />`) o cerradas (`<div></div>`)
+3. Los atributos van en *camelCase*, por ejemplo `<div onClick />`
+4. Algunos atributos tienen nombre distinto al de que se utiliza en HTML, por ejemplo `className` en vez de `class`
+5. Como eso se compila a código JS, cada línea se termina autocompletando con un punto y coma, por lo tanto, si ponemos:
 
 ```javascript
 return

@@ -1,4 +1,4 @@
-# Exports e imports
+# Export e import
 
 Una de las nuevas versiones de JS (ES6) trae la posibilidad de exportar e importar código de un archivo a otro. Esto significa que desde un archivo X podemos exportar (o poner pública, o a disponibilidad) un valor Y, y cuando un archivo Z importa ese archivo X, puede obtener y trabajar con el valor Y.
 

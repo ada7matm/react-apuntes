@@ -6,4 +6,5 @@
 [03 - Componentes funcionales](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/03%20-%20Componentes%20funcionales.md) <br />
 [04 - JSX](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/04%20-%20JSX.md) <br />
 [05 - Estilando un componente](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/05%20-%20Estilando%20un%20componente.md) <br />
-[06 - Props](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/06%20-%20Props.md)
+[06 - Props](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/06%20-%20Props.md)<br />
+[08 - Listas de componentes](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/08%20-%20Lista%20de%20componentes.md)

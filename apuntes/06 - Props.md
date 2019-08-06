@@ -36,7 +36,7 @@ const Boton = () => (
 
 es decir, un componente que devuelve un elemento `button` con un cierto texto X, independientemente de cuál sea este texto. Ahora bien, de dónde podemos obtener esta variable `texto`?
 
-React permite hacer esto mediante las **props**
+React permite hacer esto mediante las **props.**
 
 Las props son todos aquellos "atributos" custom que se pueden definir en un componente. Por ejemplo, para el siguiente componente:
 

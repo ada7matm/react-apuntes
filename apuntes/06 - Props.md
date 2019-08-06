@@ -97,4 +97,4 @@ const Usuario = ({nombre, apellido, pais}) => (
 ```
 Así "desarmamos" el objeto **props** es sus distintas propiedades. Esto limpia mucho el código, y además nos permite reconocer inmediatamente cuáles son las propiedades que nuestro componente utiliza, en vez de tener que estar buscándolas por todo el código.
 
-**No existe una cantidad máxima de props que puede tener un componente, pero en líneas generales, más de 5 props se considera mucho y llegado ese caso es recomendable analizar si ese componente no puede ser dividido en otros más pequeños**
+**No existe una cantidad máxima de props que puede tener un componente, pero en líneas generales, más de 5 props se considera mucho y llegado ese caso es recomendable analizar si ese componente no puede ser dividido en otros más pequeños.**

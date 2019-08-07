@@ -11,3 +11,5 @@
 [08 - Listas de componentes](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/08%20-%20Lista%20de%20componentes.md)<br />
 [09 - Condicionales en JSX](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/09%20-%20Condicionales%20en%20JSX.md)<br />
 [10 - Personalizando un componente](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/10%20-%20Personalizando%20un%20componente.md)
+[11 - Iconos](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/11%20-%20Iconos.md)<br />
+[12 - Renderizado condicional](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/12%20-%20Renderizado%20condicional.md)<br />

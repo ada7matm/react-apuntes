@@ -42,7 +42,7 @@ const Button = ({icon, text}) => (
 )
 ```
 
-y en algún lado donde necesitemos invoquemos ese componente:
+y en algún lado donde necesitemos invocar ese componente:
 
 ```javascript
 import React from 'react'

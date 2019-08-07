@@ -13,3 +13,4 @@
 [10 - Personalizando un componente](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/10%20-%20Personalizando%20un%20componente.md)<br />
 [11 - Iconos](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/11%20-%20Iconos.md)<br />
 [12 - Renderizado condicional](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/12%20-%20Renderizado%20condicional.md)<br />
+[13 - Componentes de clase](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/13%20-%20Componentes%20de%20clase.md)<br />

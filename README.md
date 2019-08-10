@@ -16,3 +16,7 @@
 [13 - Componentes de clase](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/13%20-%20Componentes%20de%20clase.md)<br />
 [14 - Métodos y eventos](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/13%20-%20Componentes%20de%20clase.md)<br />
 [15 - Estado](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/15%20-%20Estado.md)<br />
+[16 - setState: arrays y objectos](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/16%20-%20setState:%20arrays%20y%20objectos.md)<br />
+[17 - Elevando el estado](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/17%20-%20Elevando%20el%20estado.md)<br />
+[18 - Elevando el estado - Ejemplo](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/18%20-%20Elevando%20el%20estado%20-%20Ejemplo.md)<br />
+[19 - Inputs controlados](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/19%20-%20Inputs%20controlados.md)<br />

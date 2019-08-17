@@ -20,3 +20,4 @@
 [17 - Elevando el estado](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/17%20-%20Elevando%20el%20estado.md)<br />
 [18 - Elevando el estado - Ejemplo](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/18%20-%20Elevando%20el%20estado%20-%20Ejemplo.md)<br />
 [19 - Inputs controlados](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/19%20-%20Inputs%20controlados.md)<br />
+[20 - Prop drilling](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/20%20-%20Prop%20drilling.md)<br />

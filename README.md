@@ -23,3 +23,4 @@
 [20 - Prop drilling](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/20%20-%20Prop%20drilling.md)<br />
 [21 - Contexto](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/21%20-%20Contexto.md)<br />
 [22 - Contexto (Patrón)](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/22%20-%20Contexto%20(Patr%C3%B3n).md)<br />
+[23 - Ciclo de vida](https://github.com/ada7matm/react-apuntes/blob/master/apuntes/23%20-%20Ciclo%20de%20vida.md)

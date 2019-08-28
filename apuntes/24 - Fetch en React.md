@@ -60,7 +60,11 @@ class UsersInfo extends React.Component {
   }
   render(){
     return (
-        this.state.users.map(user => <p>{user}</p>)   
+        <div>
+        {
+          this.state.users.map(user => <p>{user}</p>)   
+        }
+        </div>
     )
   }
 }
@@ -89,14 +93,14 @@ class UsersInfo extends React.Component {
   }
   render(){
     return (
-          <>
-            { 
-              this.state.isLoading && <p>Cargando...</p> 
-            }
-            { 
-              this.state.users.map(user => <p>{user}</p>) 
-            }
-          </> 
+      <div>
+        { 
+          this.state.isLoading && <p>Cargando...</p> 
+        }
+        { 
+          this.state.users.map(user => <p>{user}</p>) 
+        }
+      </div> 
     )
   }
 }
@@ -124,16 +128,20 @@ class UsersInfo extends React.Component {
   }
   render(){
     return (
-      this.state.users.map(user => (
-        <Card>
-          <Avatar img={user.img}>
-          <Link href={user.profileUrl}>
-            <Username username={user.username}>
-          </Link>
-          <p>Registrado desde: <Date date={user.signupDate} /></p>
-          <p>Cantidad de posts: {user.posts.length} /></p>
-        </Card>
-      )) 
+      <div> 
+      {
+       this.state.users.map(user => (
+         <Card>
+           <Avatar img={user.img}>
+           <Link href={user.profileUrl}>
+             <Username username={user.username}>
+           </Link>
+           <p>Registrado desde: <Date date={user.signupDate} /></p>
+           <p>Cantidad de posts: {user.posts.length} /></p>
+         </Card>
+       ))
+      }
+      </div>
     )
   }
 }
@@ -155,7 +163,11 @@ class UsersInfoContainer extends React.Component {
   }
   render(){
     return (
-      this.state.users.map(user => <UserInfo user={user} />)
+      <div>
+      {
+        this.state.users.map(user => <UserInfo user={user} />)
+      }
+      </div>
     )
   }
 }
@@ -182,7 +194,11 @@ Este patrón se puede combinar con el patrón de lista, de la siguiente forma:
 
 ```javascript
 const UserInfoList = ({users}) => (
-   users.map(user => <UserInfo user={user} />)
+   <div>
+   {
+     users.map(user => <UserInfo user={user} />)
+   }
+   </div>
 )
 ```
 

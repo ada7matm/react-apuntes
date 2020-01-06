@@ -34,7 +34,7 @@ Muchos de estos métodos rara vez los utilizamos, pero es importante saber que e
 
 Este método es invocado cuando el componente está siendo creado y *antes* de ser montado (de ser agregado al DOM). Su función primaria es inicializar estado.
 
-```javascript
+```jsx
 class Clicker extends React.Component {
   constructor(props) {
     super(props);
@@ -42,7 +42,7 @@ class Clicker extends React.Component {
        clicks: 0
     };
   }
-  handleClick() {
+  handleClick = () => {
     this.setState({ 
       clicks: this.state.clicks + 1
     });
@@ -53,12 +53,12 @@ class Clicker extends React.Component {
 
 De todas formas, con la nueva sintaxis de JS llamada propiedades de clase, podemos evitar declarar el constructor para inicializar estado:
 
-```javascript
+```jsx
 class Clicker extends React.Component {
   state = {
        clicks: 0
   }
-  handleClick() {
+  handleClick = () => {
     this.setState({ 
       clicks: this.state.clicks + 1
     });
@@ -85,7 +85,7 @@ El ciclo de vida más utilizado, ya que lo requiere obligatoriamente todo compon
 
 Uno de los más importantes y utilizados, se ejecuta inmediatamente después de que el componente se agrega al DOM / renderiza. Aquí es dónde hacemos llamadas mediante `fetch`, agregamos eventos, o modificamos cosas que requieran del DOM. Cualquier modificación del estado con `setState` hará que el componente se vuelva a renderizar.
 
-```javascript
+```jsx
 class Username extends React.Component {
   state = {
     username: ''

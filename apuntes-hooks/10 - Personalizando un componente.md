@@ -12,7 +12,7 @@ Una opción posible, la más flexible y laxa, es darle la posibilidad a quien us
 
 Si tenemos un componente y le agregamos una clase, por ejemplo así:
 
-```javascript
+```jsx
 <PopUp className='importante' />
 ```
 
@@ -20,7 +20,7 @@ En React esto no tiene ningún efecto. Un componente es un *conjunto* de element
 
 No obstante, podemos aprovechar que eso se pasa como prop, y concatenarlo o agregarlo a algún elemento HTML de nuestro componente, por ejemplo:
 
-```javascript
+```jsx
 const PopUp = ({className}) => (
   <div className={`pop-up ${className}`} />
 )
@@ -28,15 +28,21 @@ const PopUp = ({className}) => (
 
 De esta forma, le estamos agregando la clase extra que se le defina al componente. El problema con esto es que si no se le define una clase, `className` llega como `undefined`, por lo tanto nuestro `div` nos quedaría con las clases `pop-up undefined`. Para evitar esto, podemos aprovechar los **parámetros por default**, una *feature* de JS ES6, que permite asignar un valor a un parámetro cuando este no está definido. Esto se declara asignándole al parametro el valor por default que queremos que tenga, mediante el símbolo `=`:
 
-```javascript
-const PopUp = ({
-  className = ''
-}) => (
+```jsx
+const PopUp = ({className = ''}) => (
   <div className={`pop-up ${className}`} />
 )
 ```
 
-Si el componente `PopUp` se le declara una `className`, se agregará dicha clase a la clase `pop-up` del div, si no, no se le agregará nada.
+Si el componente `PopUp` se le declara una `className`, se agregará dicha clase a la clase `pop-up` del div, si no, no se le agregará nada. Otra alternativa es usar el operador OR y la evaluación de circuito corto:
+
+```jsx
+const PopUp = ({className}) => (
+  <div className={`pop-up ${className || ''}`} />
+)
+```
+
+Si `className` es `undefined` se pasará a evaluar y devolver el segundo operando, en este caso, las comillas vacías.
 
 ## Opciones personalizadas
 
@@ -51,7 +57,7 @@ La idea es básicamente la siguiente:
   5. En nuestro componente, agregamos el valor de dicho prop como clase extra
   6. Se definen estilos generales para nuestro componente y los estilos que pertenecen a cada clase/variación posible
   
-```javascript
+```jsx
 export const TIPO_BOTON = {
   PRINCIPAL: 'primary',
   SECUNDARIO: 'secondary',
@@ -59,19 +65,19 @@ export const TIPO_BOTON = {
   IMPORTANTE: 'important'
 }
 
-const Boton = ({
-  tipo = TIPO_BOTTON.DEFAULT
-}) => ( 
+const Boton = ({tipo = TIPO_BOTTON.DEFAULT}) => ( 
   <div className={`button ${tipo}-button`} />
 )
 
 export default Boton
 ```
-```javascript
+
+```jsx
 import Boton, {TIPO_BOTON} from 'boton'
 
 <Boton tipo={TIPO_BOTON.PRIMARIO} />
 ```
+
 ```scss
 .button {
   width: 200px;
@@ -90,7 +96,6 @@ import Boton, {TIPO_BOTON} from 'boton'
     background-color: red
   }
 }
-
 ```
 
 De esta forma, al utilizar las propiedades de un objeto, tenemos el autocomplete de nuestro editor que nos indica cuáles son las opciones disponibles, y es mucho menos probable que le erremos, además de evitarnos tener que buscar en el código cuáles son las posibles.
